@@ -1,0 +1,6 @@
+Primeros comandos
+  git --version - Muestra la versión
+  git help - Ayuda, si se desea terminar de ver la ayuda presionar la letra [Q]
+  git help commit  - Ir al comando en especifico de ayuda, si se desea terminar de ver la ayuda presionar la letra [Q]
+   
+  
