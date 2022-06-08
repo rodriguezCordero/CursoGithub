@@ -2,7 +2,10 @@ Primeros comandos
   git --version - Muestra la versión
   git help - Ayuda, si se desea terminar de ver la ayuda presionar la letra [Q]
   git help commit  - Ir al comando en especifico de ayuda, si se desea terminar de ver la ayuda presionar la letra [Q]
-  git init - Inicializa el repositorio, debes ser ejecutado desde la carpeta donde está nuestro código
+  --Los siguientes comando se deben ejecutar desde la carpeta donde se encuentra nuestro proyecto---
+  git init - Inicializa el repositorio
   git status - Mestra información sobre los commits, sobre la rama en la que nos encontramos, mensajes de seguimientos
   git add . - Prepara todos los archivos para el Commit
   git add <nombre_archivo> - Prepara el archivo al Commit
+  git reset <nombre_archivi> - Quita el archivo de la preparación del commit
+  git commit -m "Colocamos el nombre del commit" - Ejecuta el commit
