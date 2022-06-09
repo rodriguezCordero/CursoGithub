@@ -3,5 +3,6 @@ Comandos para la configuración global
   git config --global user.email "Colocar el correo con el que nos autenticamos a Github"
   git config --global -e = Lista todo lo que se acaba de hacer, sirve para revisar que la configuración este correcta
     En caso de que se desee modificar algo, se presiona la tecla [A] y para guardar presionamos la tecla [ESC] luego [:][w][q][!]
+  git config --global init.defaultBranch main  = Cambia a nivel global el nombre de la rama master por main
   
   
