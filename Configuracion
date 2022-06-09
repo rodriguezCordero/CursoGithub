@@ -1,6 +1,7 @@
 Comandos para la configuración global
   git config --global user.name "Se coloca el nombre de usuario"
   git config --global user.email "Colocar el correo con el que nos autenticamos a Github"
-  git config --global -e - Lista todo lo que se acaba de hacer, sirve para revisar que la configuración este correcta
+  git config --global -e = Lista todo lo que se acaba de hacer, sirve para revisar que la configuración este correcta
     En caso de que se desee modificar algo, se presiona la tecla [A] y para guardar presionamos la tecla [ESC] luego [:][w][q][!]
+  
   
