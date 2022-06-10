@@ -9,11 +9,22 @@ Primeros comandos
   git log = Para ver los logs del repositorio, muestra el hash o ID, Autor, fecha y mensaje del commit; se ordenan del mas reciente al mas viejo
   git add . = Prepara todos los archivos para el Commit; es decir colocar los archivos en el escenario
   git add <nombre_archivo> =  Prepara el archivo al Commit; es decir colocar el archivo en el escenario
-  git reset <nombre_archivi> =  Quita el archivo de la preparación o del escenario del commit
+  git add *.html = Añade archivos tipo html al escenario
+  git reset <nombre_archivo1> <nombre_archivo1> <nombre_archivo1> =  Quita el archivo(s) de la preparación o del escenario del commit
   git commit -m  = "Colocamos el nombre del commit" - Ejecuta el commit
-  git checkout -- .  =  Sirve para recontruir el proyecto a como estaba en el último commit
-  git branch -m master main = Cambia el nombre de la rama
   ******************************[NOTA INICIO, TIP]***********************************
   git commit -am "mensaje_commit" = Si queremos añadir y hacer commit en una misma instrucción ejecutariamos; No funciona con archivos Untrack
   ******************************[NOTA FIN, TIP]**************************************
+  git checkout -- .  =  Sirve para recontruir el proyecto a como estaba en el último commit
+  git branch -m master main = Cambia el nombre de la rama
   
+  ***** ALIAS INICIO***
+  git config --global alias.<nombrealias> "<acciones>" = Crear Alias, ejemplo: git config --global alias.s "status --short"
+  git config --global -e = Editar un alias precionarmos la tecla [A]; para guardar los cambios presionamos la teclas [ESC][wq!]
+   #### ALIAS SUGERIDOS ####
+   Log
+   git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+   Status
+   git config --global alias.s status --short
+   git config --global alias.s status -sb = Alternativa de status
+ ***** ALIAS FIN***
