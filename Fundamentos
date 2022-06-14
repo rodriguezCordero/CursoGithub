@@ -28,3 +28,17 @@ Primeros comandos
    git config --global alias.s status --short
    git config --global alias.s status -sb = Alternativa de status
  ***** ALIAS FIN***
+ 
+ Cambios en los archivos
+ git diff = Muestra el lugar donde hubo cambios, puede ser antes o despues del commit
+ git diff --stages = Muestra los cambios que estén en el stage o en el escenario
+ 
+ Actualizar mensajes y revertir commits(viajes en el tiempo)
+ git commit --amend -m "aquí el mensaje a areglar" = Actualiza o cambia el mensaje del último commit
+ git reset --soft HEAD^[esto es opociones y es el numero de commits anteriores] = Elimina o revierte el commit indicado manteniendo los cambios
+ git reset --soft [Podemos colocar el has corto del ultimo commit a donde deseeemos apuntar] = ejemplo : git reset --soft 12345 
+ git reset --mixed [codigo del hast respectivo] = Aqui elimina los commits subsecuentes y mantiene los acambios en el stage
+ git reset --hard [código del hast] = 
+ Viajes en el tiempo, resets y reflog
+ 
+ 
