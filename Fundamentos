@@ -37,8 +37,16 @@ Primeros comandos
  git commit --amend -m "aquí el mensaje a areglar" = Actualiza o cambia el mensaje del último commit
  git reset --soft HEAD^[esto es opociones y es el numero de commits anteriores] = Elimina o revierte el commit indicado manteniendo los cambios
  git reset --soft [Podemos colocar el has corto del ultimo commit a donde deseeemos apuntar] = ejemplo : git reset --soft 12345 
- git reset --mixed [codigo del hast respectivo] = Aqui elimina los commits subsecuentes y mantiene los acambios en el stage
- git reset --hard [código del hast] = 
- Viajes en el tiempo, resets y reflog
+ git reset --mixed [codigo del hast respectivo] = Aqui elimina los commits subsecuentes y mantiene los cambios en el stage
+ git reset --hard [código del hast] = Restaura al ultimo commit y no mantiene los cambios
+ git reflog = Muestra todos los commits incluso los eliminados
  
- 
+ Cambiar el nombre y eliminar archivos
+ git mv [nombre_archivo] [nuevo_nombre] = Cambiar el nombre un archivo que ya se le está dando seguimiento
+ git rm [nombre_archivo] = Eliminar un archivo
+  También se puede elimiar desde el editor visual estudio code
+  
+ Ignorando archivos que no deseamos
+  ## En la raíz del proyecto se debe crear el archivo llamado .gitignore y en él especificar los archivos y carpetas que no se le dará seguimiento, el archivo gitignore a ese si se debe dar seguimiento
+  
+  
