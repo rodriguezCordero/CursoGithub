@@ -1,1 +1,18 @@
-xxx
+Ramas
+  git branch <nombre_rama>  = Crear Rama  
+  git checkout <nombre_rama> = Para cambiarse a la rama
+  git checkout -b(branch) <nombre_rama> = Crear rama y moverse
+  git branch -d <nombre_rama> = Elimina una rama
+
+Merge
+  git merge <nombre_rama> [-f para hacerlo de manera forzada] = Para unir las ramas debes estar parado en la rama que está esperando los cambios
+
+Resolución de conflictos
+  git commit -am "mensaje_del_commit" = Resuelve el conlicto
+  
+Etiquetas, son una referencia a un commit específico
+  git tag <nombre_tag>= Crear tag al último commit o donde este parado el HEAD
+  git tag -a <version> -m "Mensaje" = Crear tag al último commit o donde este parado el HEAD
+  git tag -a <version> <hash_del_commit> = Ponerles una etiqueta a un commit en especifico
+  git tag -d <version> = Borrar tag
+  git show <version_anotada o nombre_tag>= Ver información sobre un tag en específico 
