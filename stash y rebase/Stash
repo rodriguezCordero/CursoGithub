@@ -1,5 +1,13 @@
 Stash = Es una caja o contenedor donde podemos dejar temporalmente como estaba en el úitmo commit
 
-git stash = Crea temporalmente un espacio donde tengo guardados mis cambios o mi trabajo actul
+git stash = Crea temporalmente un espacio donde tengo guardados mis cambios o mi trabajo actual
+git stash save "Nombre o Descripción" = Colocarle una descripción al stash
 git stash list = Lista los stash disponibles
-git stash pop  = Va tomar los cambios que están en el último stash así como lo dejamos y se va a integrar con el commit más reciente
+git stash show <#numero_stash, se consigue haciendo git stash list> = Ver información en particular de algún stash
+git stash list --stat = Ver más información de cada uno de los stash
+git stash pop  = Va tomar los cambios que están en el último stash así como lo dejamos y se va a integrar con el commit más reciente y borrar ese stash
+git stash apply <#numero_stash, se consigue haciendo git stash list> = Recuperar un stash en particular 
+git stash clear = Eliminar todos los stash en caso de que ya no interese seguir trabajando los stash
+git stash drop <#numero_stash, se consigue haciendo git stash list>= Elimina un stash en particular
+
+Resolución de conflictos en Stash
