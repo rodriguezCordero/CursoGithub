@@ -1,0 +1,5 @@
+Stash = Es una caja o contenedor donde podemos dejar temporalmente como estaba en el úitmo commit
+
+git stash = Crea temporalmente un espacio donde tengo guardados mis cambios o mi trabajo actul
+git stash list = Lista los stash disponibles
+git stash pop  = Va tomar los cambios que están en el último stash así como lo dejamos y se va a integrar con el commit más reciente
