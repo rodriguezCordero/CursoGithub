@@ -1,0 +1,10 @@
+git branch = Nos inidica en que rama estamos parados
+---Para hacer un rebase tenemos que estar en la rama en la cual queremos mover los cambios---
+1.- git checkout <nombre-rama> = Para cambiar de rama
+2.- git rebase master
+--Unificar commits---
+git rebase -i(Interactivo) HEAD(Se refiere a ultimo commit) ó <HASH del commit> ó HEAD~4(Los últimos 4 commits) = Aparece la ayuda de ahí tenemos que seleccionar squash:
+  Presionamos la tecla A para hacer una insercción 
+  
+  
+  ******* NOTA: REVISAR MÁS A DETALLE LA PARTE DE REBASE************
