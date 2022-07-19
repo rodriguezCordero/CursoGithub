@@ -13,3 +13,5 @@ git push -u origin master = Subir nuestros cambios al remoto
   origin = Nombre del repositorio
   master = Rama a la que deseamos enviar
   Nota: Una vez ejecutado el comando nos va a pedir usuario y contraseña 
+----Tags de los push
+git push --tags = Sube o crea los tags desde nuestro local al origen remoto
