@@ -1,0 +1,15 @@
+* Git no maneja el acceso al repositorio
+* GitHub puede manejar el acceso, también se le conoce como una Plataforma de desarrollo colaborativo para alojar proyectos
+
+Respaldo en servidor remoto
+push = Tomar nuestro repositorio y subirlos remotamente
+pull = Obtener el repositorio remotamente
+
+*************Comandos*************
+git remote add origin https://github.com/<usuario>/<repositorio.git> = Cuando estamos en nuestro repositorio local y queremos agregar un origen remoto
+git remote -v = Revisar las fuentes remotas que tenemos agregadas al repositorio
+git push -u origin master = Subir nuestros cambios al remoto
+  -u = Ayuda a que la próxima vez que hagamos un push, no necesitemos especificar la rama.
+  origin = Nombre del repositorio
+  master = Rama a la que deseamos enviar
+  Nota: Una vez ejecutado el comando nos va a pedir usuario y contraseña 
