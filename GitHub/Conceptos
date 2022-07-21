@@ -15,3 +15,34 @@ git push -u origin master = Subir nuestros cambios al remoto
   Nota: Una vez ejecutado el comando nos va a pedir usuario y contraseña 
 ----Tags de los push
 git push --tags = Sube o crea los tags desde nuestro local al origen remoto
+
++++++++ Clonar un repositorio +++++++
+1.- Navegar en la carpeta donde quiero que clone el proyecto
+2.- git clone <pegar el https://ruta-del-repositorio.git>
+
++++++++++++ Descargar cambios de Github | Comando Pull +++++++++++++++++
+git pull = Traerse los cambios de GitHub remoto al local
+git pull origin main = Se traen los cambios de una rama en especifico de Github remoto
+Nota: Que es un Fast-forward = Quiere decir que avanzó al último punto el repositorio local
+  ++Configuracion para el Warning -Pulling without reconcile++
+   git config --global pull.ff only  = Aplica la confirugacion global de Fast-forward
+   git config --global -e = Para poder apreciar la configuración
+ 
+ +++ Cuando exista un conflicto con los cambios y no se pueda hacer un Fast forward +++
+ 1.- git config pull.rebase true = Hace una configuració local del repositorio en cuestion
+ 2.- git pull  = Se trae los cambios para poder decidir manualmente cuales son los cambios que vamos a mantener
+ 3.- Guardar los cambios
+ 4.- git add .
+ 5.- git commit -m "Mensaje"
+ Como estamos en un rebase interactivo, para seguir y terminar el rebase
+ 6.- git rebase --continue
+ Ahora hacer permanente en el repositorio de Github
+ 7.- git push 
+
++++++++++++ Subir cambios al Github | Comando Push +++++++++++++++++
+1.- git commit -am "Mensaje del commit" = Los cambios están locales
+2.- git push = Sube los cambios del local al github remoto
+3.-  Revisar los cambios en el Github web
+
+
+   
